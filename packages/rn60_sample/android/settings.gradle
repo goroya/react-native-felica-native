@@ -1,0 +1,5 @@
+rootProject.name = 'rn60_sample'
+include ':react-native-felica-native'
+project(':react-native-felica-native').projectDir = new File(rootProject.projectDir, '../../react-native-felica-native/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
